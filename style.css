@@ -1,0 +1,47 @@
+* {
+    line-height: 1.5;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif
+}
+
+img {
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    color: darkred;
+}
+
+.recipe-card {
+    width: 400px;
+    background-color: #FFFAFA;
+    text-align: center;
+}
+
+.recipe-content {
+    text-align: left;
+}
+
+.recipe-card h3, .recipe-card a {
+    text-transform: uppercase;
+}
+
+.recipe-card.feature {
+    border: 2px solid darkred;
+}
+
+ul li h3 {
+    font-size: 16px;
+}
+
+.recipe-card a {
+    background-color: #fc9400;
+    color: white;
+    text-decoration: none;
+}
