@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Arial, Helvetica, sans-serif
+    font-family: Verdana, Verdana, Helvetica, sans-serif
 }
 
 img {
@@ -44,4 +44,17 @@ ul li h3 {
     background-color: #fc9400;
     color: white;
     text-decoration: none;
+}
+
+/* Recipe Content */
+nav {
+    background-color: #edede9;
+}
+
+.home  {
+    float: right;
+}
+
+.page-content {
+    width: 600px;
 }
