@@ -1,94 +1,196 @@
 * {
-    line-height: 1.5;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Verdana, Verdana, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Verdana', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-
-img {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    vertical-align: bottom;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    flex: 1;
 }
 
-ul {
-    list-style: none;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    color: darkred;
-    margin: 0;
-}
-
-.recipe-card {
-    width: 900px;
-    background-color: #FFFAFA;
-    margin: 20px auto;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
-}
-
-.recipe-content {
-    padding: 20px;
-    display: inline-block;
-    width: 580px;
-    vertical-align: top;
-}
-
-.recipe-home-paragraph {
-    margin-bottom: 20px;
+.navbar .logo {
+    line-height: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 5px; 
 
 }
 
-.recipe-card h3, .recipe-card a {
-    text-transform: uppercase;
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
 }
 
-.recipe-card.feature {
-    border: 2px solid darkred;
-}
-
-ul li h3 {
-    font-size: 16px;
-}
-
-.recipe-card a {
-    background-color: #fc9400;
-    color: white;
+.navbar a {
     text-decoration: none;
-    padding: 10px 12px;
-    display: inline-block;
-    vertical-align: top;
+    color: #000000;
+    font-weight: bold;
 }
 
-.recipe-info {
-    display: inline-block;
-    width: 380px;
+.hero .hero-text {
+    width: 100%;
+    height: 50vh;
+    text-align:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 15px;
 }
 
-.recipe-info li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* Recipe Page */
-nav {
-    background-color: #edede9;
-}
-
-.home  {
-    float: right;
-}
-
-.page-content {
+.hero p {
     width: 600px;
+}
+
+.main {
+    background-color: #e5e5e5;
+    padding-bottom: 30px;
+}
+
+.main-header {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+} 
+
+.recipe-cards {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 30px;
+} 
+
+
+.recipe-cards .card {
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    /* flex: 1; */
+} 
+
+
+.card img {
+    width: 100%;
+    height: 225px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-header, .card-description, .card-button {
+    padding: 8px;
+}
+
+.card-description {
+    line-height: 15px;
+    font-size: 13px;
+}
+
+.card-button button {
+    background-color: #fca311;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: transparent;
+    font-weight: 700;
+}
+
+.card-button {
+    align-self: center;
+    padding-bottom: 15px;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    gap: 30px;
+    padding: 30px;
+}
+
+.about-left, .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-left {
+    padding: 30px;
+    background-color: #fca311;
+    color: white;
+    flex: 1;
+}
+
+.about-left p {
+    width: 400px;
+}
+
+
+.about-right img, .about-left {
+    border-radius: 8px;
+} 
+
+/* .about-right {
+    flex: 1;
+} */
+
+.about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100px;
+    flex-shrink: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #14213d;
+    padding: 20px;
+}
+
+.contact-button button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.contact-header {
+    padding-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
