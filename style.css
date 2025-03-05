@@ -344,17 +344,17 @@ form input {
     flex-wrap: wrap;
 }
 
-.recipe-list {
+.recipe-list, .recipe-sauce {
     list-style-type: none;
     flex: 1;
     min-width: 300px;
 }
 
-.recipe-list li:before {
+.recipe-list li:before, .recipe-sauce li:before {
     content: '✓';
 } 
 
-.recipe-list li {
+.recipe-list li, .recipe-sauce li {
     padding: 5px 15px;;
 }
 
@@ -393,7 +393,6 @@ form input {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    border: 2px solid black;
     margin: 20px;
     border-radius: 8px;
     background-color: #e5e5e5
@@ -401,6 +400,10 @@ form input {
 
 .recipe-chefs-hat img {
     width: 80px;
+}
+
+.recipe-chefs-note-description {
+    text-align: center;
 }
 
 /* Socials */
