@@ -236,11 +236,16 @@ form input {
     padding-bottom: 15px;
 }
 
-footer {
+.main-footer {
     display: flex;
     background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    gap: 10px;
+    padding: 20px;
 }
+
+
+/* RECIPE STYLES */
+
