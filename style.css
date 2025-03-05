@@ -10,7 +10,7 @@ body {
     flex-direction: column;
 }
 
-.navbar {
+.navbar, .recipe-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar .logo {
+.navbar .logo, .recipe-nav .logo {
     line-height: 13px;
     font-size: 20px;
     font-weight: bold;
@@ -27,11 +27,11 @@ body {
     gap: 5px; 
 }
 
-.navbar .links {
+.navbar .links, .recipe-nav .links {
     width: auto;
 }
 
-.navbar-links {
+.navbar-links, .recipe-navbar-links {
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -41,24 +41,25 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar-links li {
+.navbar-links li, .recipe-navbar-links li {
     margin: 5px 0;
 }
 
-.navbar a {
+.navbar a, .recipe-nav a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
-    .navbar {
+    .navbar, .recipe-nav {
         flex-direction: column;
         text-align: center;
         gap: 5px;
+        padding-top: 25px;
     }
 
-    .navbar-links {
+    .navbar-links, .recipe-navbar-links {
         gap: 20px;
     }
 }
@@ -135,13 +136,14 @@ body {
     font-size: 13px;
 }
 
-.card-button button {
+.card-button a {
     background-color: #fca311;
     color: white;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 8px;
     border: transparent;
-    font-weight: 700;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .card-button {
@@ -248,4 +250,192 @@ form input {
 
 
 /* RECIPE STYLES */
+
+/* Hero section */
+.recipe-hero {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.recipe-hero-img img, .recipe-hero-content {
+    border-radius: 8px;
+}
+
+.recipe-hero-img {
+    flex: 0 0 500px;
+    min-width: 300px;
+}
+
+.recipe-hero-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 100px;
+    max-height: 500px;
+    flex-shrink: 0;
+}
+
+.recipe-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* border: 2px solid #fca311; */
+    background: #fca311;
+    flex: 1 1 300px;
+    min-width: 300px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+
+.recipe-hero-content .header {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.cook-time-header {
+    font-weight: 600;
+}
+
+.recipe-hero-cook-time li {
+    list-style-type: none;
+}
+
+.recipe-hero-cook-time {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .recipe-hero {
+        flex-direction: column;
+    }
+
+    .recipe-hero-img,
+    .recipe-hero-content {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+/* Ingredients */
+
+.recipe-ingredients {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #14213d;
+    color: white;
+}
+
+.recipe-ingredients-list {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.recipe-list {
+    list-style-type: none;
+    flex: 1;
+    min-width: 300px;
+}
+
+.recipe-list li:before {
+    content: '✓';
+} 
+
+.recipe-list li {
+    padding: 5px 15px;;
+}
+
+/* Directions */
+
+.recipe-directions {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.recipe-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.step-header {
+    font-weight: 600;
+}
+
+.step-description {
+    padding: 5px 5px;
+}
+
+/* Chef's Note */
+
+.recipe-chefs-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #e5e5e5
+}
+
+.recipe-chefs-hat img {
+    width: 80px;
+}
+
+/* Socials */
+
+.recipe-follow {
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fca311;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recipe-follow-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.recipe-follow-header {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.recipe-follow-right {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 35px;
+    gap: 10px;
+}
+
+.recipe-follow-socials-logo img {
+    width: 20px;
+}
 
