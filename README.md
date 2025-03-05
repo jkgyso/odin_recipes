@@ -36,7 +36,7 @@ If you'd like to view the project locally:
 
 ### References
 
-- **Website Inspiration**: https://www.figma.com/community/file/1250914248165905105
+- **[Website Inspiration](https://www.figma.com/community/file/1250914248165905105)**
 - **Content Reference**: Recipes by [Chef John's 22 Best Shrimp Dinner Recipes](https://www.allrecipes.com/chef-johns-best-shrimp-dinner-recipes-8743157)
 - **Images**
   - Recipe images source from [Chef John's 22 Best Shrimp Dinner Recipes](https://www.allrecipes.com/chef-johns-best-shrimp-dinner-recipes-8743157) and [Pexels](https://www.pexels.com/search/food/)
