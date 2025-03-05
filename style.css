@@ -15,7 +15,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
-    flex: 1;
+    /* flex: 1; */
+    flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -24,19 +25,42 @@ body {
     font-weight: bold;
     display: flex;
     gap: 5px; 
+}
 
+.navbar .links {
+    width: auto;
 }
 
 .navbar-links {
     list-style-type: none;
+    justify-content: center;
+    align-items: center;
     display: flex;
     gap: 40px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar-links li {
+    margin: 5px 0;
 }
 
 .navbar a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .navbar-links {
+        gap: 20px;
+    }
 }
 
 .hero .hero-text {
@@ -51,10 +75,13 @@ body {
     align-items: center;
     color: white;
     gap: 15px;
+    padding: 0 20px;
 }
 
 .hero p {
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
+    line-height: 1.6;
 }
 
 .main {
@@ -128,6 +155,8 @@ body {
     flex: 1;
     gap: 30px;
     padding: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .about-left, .about-right {
@@ -141,10 +170,13 @@ body {
     background-color: #fca311;
     color: white;
     flex: 1;
+    min-width: 300px;
+    width: 100%;
 }
 
 .about-left p {
-    width: 400px;
+    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -152,16 +184,17 @@ body {
     border-radius: 8px;
 } 
 
-/* .about-right {
+.about-right {
     flex: 1;
-} */
+    min-width: 300px;
+} 
 
 .about-right img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     min-height: 100px;
-    flex-shrink: 0;
+    max-height: 500px;
 }
 
 .contact {
@@ -174,6 +207,21 @@ body {
     padding: 20px;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 8px;
+    gap: 15px;
+
+    align-items: center;
+}
+
+form input {
+    width: 300px;
+}
+
 .contact-button button {
     background-color: transparent;
     color: white;
@@ -181,6 +229,8 @@ body {
     border-radius: 8px;
     border: 1px solid white;
 }
+
+
 
 .contact-header {
     padding-bottom: 15px;
