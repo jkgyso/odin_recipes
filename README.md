@@ -1,13 +1,42 @@
-## Odin Recipes 
+## The Recipe Hub
 
-Chef John's 3 Best Shrimp Dinner Recipes 
+### Overview
 
-1. Barbequed Shrimp
-- This grill-free BBQ shrimp dish boasts big, big New Orleans-inspired flavor. _"An indigenous American shellfish dish, cooked on the stovetop,"_ says Chef John. _"It has plenty of big flavors from garlic, rosemary, and freshly cracked black pepper. Serve over hot cooked rice. Use the largest shrimp you can get."_
-2. Grilled Garlic and Herb Shrimp
-- Here's a classic grilled shrimp recipe that's so easy and so delicious. The marinade and the serving sauce are perked up with fresh herbs and crushed garlic. Chef John recommends the extra-large shrimp here _"so they can grill longer and get maximum caramelization."_
-3. Hawaiian Garlic Shrimp Scampi
-- Here's a Hawaiian-style scampi with extra garlic and a rice flour coating. Serve over rice with fresh lemon wedges. _"If you're a garlic lover, you're going to want to pull out your bucket list and add this recipe to it,"_ says Chef John. _"I absolutely love this, and I think you will too."_
-	
-### Reference
-- https://www.allrecipes.com/chef-johns-best-shrimp-dinner-recipes-8743157
+The Recipe Hub is a simple yet functional recipe website built as part of the Odin Project curriculum. The website showcases different recipes with detailed instructions and ingredients. It is designed with a clean layout using **Flexbox properties** for styling and responsiveness.
+
+### Features
+
+- A homepage with links to various recipes
+- Individual recipe pages with ingredients and step-by-step instructions
+- Responsive design utilizing Flexbox
+- simple and easy-to-navigate interface
+
+### Technologies Used
+
+- **HTML**: For structuring webpage content
+- **CSS(Flexbox)**: For layout and styling
+
+### Live Demo
+
+[Check out the live website here](https://jkgyso.github.io/odin_recipes)
+
+### How to Use
+
+1. Visit website using the link above.
+2. Click on a recipe to view its details.
+3. Follow the ingredients and instructions to cook the dish.
+
+### Installation(For Local Viewing)
+
+If you'd like to view the project locally:
+
+1. Clone the repository:
+   `git clone https://github.com/jkgyso/odin_recipes.git`
+2. Open the project foler and launch `index.html` in a browser.
+
+### References
+
+- **Website Inspiration**: https://www.figma.com/community/file/1250914248165905105
+- **Content Reference**: Recipes by [Chef John's 22 Best Shrimp Dinner Recipes](https://www.allrecipes.com/chef-johns-best-shrimp-dinner-recipes-8743157)
+- **Images**
+  - Recipe images source from [Chef John's 22 Best Shrimp Dinner Recipes](https://www.allrecipes.com/chef-johns-best-shrimp-dinner-recipes-8743157) and [Pexels](https://www.pexels.com/search/food/)
