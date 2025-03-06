@@ -18,7 +18,7 @@ The Recipe Hub is a simple yet functional recipe website built as part of the Od
 
 ### Live Demo
 
-[Check out the live website here](https://jkgyso.github.io/odin_recipes)
+[Check out the live website here](https://jkgyso.github.io/the_recipe_hub/)
 
 ### How to Use
 
